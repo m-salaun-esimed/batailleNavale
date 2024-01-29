@@ -1,0 +1,30 @@
+<div class="container" id="formulaire">
+    <div class="row mx-auto mt-5">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <h1 class="card-title text-center">Configuration d'une nouvelle partie !</h1>
+                <div class="body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nom du joueur</label>
+                            <input type="text" class="form-control" id="nomJoueur" placeholder="Entrez votre nom">
+                        </div>
+                        <div class="container">
+                            <div class="alert alert-danger" role="alert" id="danger" style="display: none">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Choix de la difficultée (taille de grille)</label>
+                            <select class="form-select" id="choixDifficulte" aria-label="Sélectionnez une difficulte">
+                                <option value="facile">facile</option>
+                                <option value="normal">Normal</option>
+                                <option value="difficile">Difficile</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="initialisationJeuxController.traiterLesInfos()">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
